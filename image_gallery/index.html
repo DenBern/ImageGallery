@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="./assets/svg/favicon.svg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap" rel="stylesheet">
+  <title>Photo gallery</title>
+</head>
+<body>
+  <header>
+    <div class="container-search">
+      <input type="text" id="search" placeholder="Start search..." autofocus>
+      <button class="search"></button>
+      <button class="clear"></button>
+    </div>
+    <div class="container-keyword">
+      <p>Keyword: <i><span class="keyword"></span></i></p>
+    </div>
+    <div class="container-description">
+      <p>Description: <span class="description"></span></p>
+    </div>
+  </header>
+  <div class="container">
+    <main>
+      <section class="photos">
+        <div class="wrapper-full-photo">
+          <div class="wrapper-photo-id">
+            <div class="container-spinner">
+              <div class="spinner"></div>
+            </div>
+            <a class="full-photo" target="_blank"></a>
+            <div class="error-id">
+              <div class="exclamation"></div>
+              <p class="text-error">Oops!Something went wrong.</p>
+            </div>
+            <div class="empty-result"></div>
+          </div>
+        </div>
+        <div class="slider">
+          <button class="prev-photos">Prev</button>
+          <div class="preview-photos"></div>
+          <button class="next-photos">Next</button>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="./scripts/index.js" type="module"></script>
+</body>
+</html>
